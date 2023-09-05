@@ -39,4 +39,5 @@ let student2: Student = {
 	2: 'A',
 };
 
-student2[2] = 'Z';
+student2['2'] = 'A';
+student2['2'] = 'Z';
