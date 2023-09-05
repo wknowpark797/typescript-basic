@@ -38,3 +38,9 @@ const test4 = (n1: number, n2: number, n3?: number) => {
 	return result;
 };
 test4(1, 2);
+
+// 동일한 타입의 파라미터를 여러개 받을 경우 (범용적 사용)
+const test5 = (...nums: number[]) => {
+	return nums.reduce((acc, cur) => acc + cur, 0);
+};
+test5(1, 2, 3, 4, 5);
